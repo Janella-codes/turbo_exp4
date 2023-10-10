@@ -77,10 +77,10 @@ export const HomeScreen = () => {
   const [showPost, setShowPost] = React.useState<string | null>(null);
 
   return (
-    <SafeAreaView className="bg-[#2e026d] bg-gradient-to-b from-[#2e026d] to-[#15162c]">
+    <SafeAreaView className="bg-[#4ecce6] bg-gradient-to-b from-[#2ba1c1] to-[#15162c]">
       <View className="h-full w-full p-4">
         <Text className="mx-auto pb-2 text-5xl font-bold text-white">
-          Create <Text className="text-[#cc66ff]">T3</Text> Turbo
+          Welcome <Text className="text-[#66d6fffc]">yep</Text> Thing
         </Text>
 
         <View className="py-2">
