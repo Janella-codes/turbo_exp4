@@ -4,11 +4,10 @@ import {
   useSession,
 } from "@clerk/nextjs/dist/client";
 import Link from "next/link";
-import { trpc } from "../../utils/trpc";
 
 export function SideNav() {
   const session = useSession();
-  const user = trpc.post.all.useQuery();
+  const user = session.data?.user;
 
   return (
     <nav className="sticky top-0 px-2 py-4">
